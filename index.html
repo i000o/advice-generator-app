@@ -9,17 +9,23 @@
   <link rel="stylesheet" href="/dist/output.css">
   <title>Frontend Mentor | Advice generator app</title>
 </head>
-<body class="flex flex-col bg-[#323a49] font-[Manrope] font-normal justify-center items-center w-full text-center">
-  <main class="card flex flex-col bg-[#4e5d73] h-[20em] justify-center items-center rounded-md m-5"> <!-- replace card with tailwind classes but label for now --> 
-    <h1 class="uppercase font-light tracking-widest w-full text-[#52ffa8] text-[0.7em]">
-      Advice #<!-- Advice ID goes here -->
+<body class="flex flex-col bg-[#1F2632] font-[Manrope] font-extrabold justify-center items-center w-full text-center mt-50">
+  <div class="card flex flex-col bg-[#323A49] justify-start items-center rounded-md p-10 ml-10 mr-10 relative"> 
+    <h1 class="uppercase tracking-[6px] w-full text-[#52ffa8] text-[0.7em] text-[0.7em] m-5 mt-0" id="advice-id">
+    <!-- Advice ID goes here -->
     </h1>
-    <h2> 
-      "<!-- Advice text goes here -->"
+    <p id="advice-generator-title" class="title"> 
+    </p>
+    <h2 class="text-white text-[1.4em] mb-10 font-bold" id="advice"> 
+      <!-- "If you go full-time at your job, you can use the money to your advantage." -->
     </h2>
-    <img src="images/pattern-divider-mobile.svg" alt="pattern-divider-mobile" class="w-80"> <!-- may need to be replaced with <picture> to switch out for desktop version -->
-  </main>
-  <img src="images/icon-dice.svg" alt="dice icon" class="w-[50px]"> <!-- dice icon -->
+    <p id="advice-generate-instruction" class="instruction"> 
+    </p>
+    <img src="images/pattern-divider-mobile.svg" alt="pattern-divider-mobile" class="pb-5"> <!-- may need to be replaced with <picture> to switch out for desktop version -->
+    <button type="button" class= "bg-[#52ffa8] p-4 rounded-full absolute cursor-pointer bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2">
+      <img src="images/icon-dice.svg" alt="dice icon" class="w-6"> 
+    </button>
+    </div>
   <!-- <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Iman Osman</a>.

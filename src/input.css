@@ -1,2 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import 'tailwindcss'; 
+
+.title { 
+    @apply uppercase tracking-[6px] w-full text-[#52ffa8] text-[0.7em] text-[0.7em] m-5 mt-0; 
+}
+
+.instruction { 
+    @apply text-white text-[1.4em] mb-10 font-bold; 
+}
